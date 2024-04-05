@@ -1,7 +1,5 @@
-const toggleBtn = document.getElementById('toggle');
-const body = document.body;
-
-toggleBtn.addEventListener('click', function() {
-    body.classList.toggle('dark-mode')
-}) 
-
+function calcular() {
+    const valor = document.getElementById('valor').value;
+    const calculo = valor * 5.04;
+    document.getElementById('dolar').textContent = 'dolar é:' + calculo.toFixed(2);
+}
