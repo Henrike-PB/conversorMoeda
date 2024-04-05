@@ -1,9 +1,5 @@
 function calcular() {
-    const real = document.querySelector('#valor');
-    const valor = real.value;
-
-    const converter = valor *5.04;
-      document.getElementById('dolar').innerHTML = convert.toFixed(2)
+    const valor = document.getElementById('valor').value;
+    const calculo = valor * 5.04;
+    document.getElementById('dolar').textContent = 'dolar é:' + calculo.toFixed(2);
 }
-
-
